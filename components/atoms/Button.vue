@@ -1,12 +1,22 @@
 <template>
     <div class="button">
-        <span>これはボタンです</span>
+        <span>{{link}}</span>
     </div>
 </template>
 
 <script>
-export default {
-}
+export default defineComponent ({
+    props: {
+        link: {
+            type: String,
+        }
+    },
+    setup({link}) {
+        return {
+            link
+        }
+    }    
+})
 </script>
 
 <style lang="scss">

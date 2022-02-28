@@ -1,22 +1,33 @@
+<script lang="ts">
+import AtomsButton from '../../components/atoms/Button.vue';
+export default defineComponent ({
+    props: {
+        localeData: {
+            type: Object,
+        }
+    },
+    components: {AtomsButton},
+
+    setup({localeData}) {
+        return {
+            localeData
+        }
+    }    
+})
+</script>
+
 <template>
     <section class="hero">
         <video id="video" poster="../../assets/images/hero.png" webkit-playsinline playsinline muted autoplay loop>
             <source src="../../assets/videos/bg-rohito.mp4" type="video/mp4">
         </video>
         <div class="hero__contents">
-            <h2 class="hero__copy">Have a Happy Creative Nightlife!</h2>
-            <p class="hero__description">素敵なバーチャルの夜を応援するクリエイターユニット</p>
-            <AtomsButton />
+            <h2 v-if="localeData.heading" class="hero__copy">{{localeData.heading}}</h2>
+            <p v-if="localeData.subheading" class="hero__description">{{localeData.subheading}}</p>
+            <AtomsButton v-if="localeData.link" :link="`${localeData.link}`" />
         </div>
     </section>
 </template>
-
-<script>
-import AtomsButton from "../atoms/Button.vue";
-export default {
-    components: {AtomsButton}
-}
-</script>
 
 <style lang="scss">
 #video {
