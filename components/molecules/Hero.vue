@@ -24,7 +24,7 @@ export default defineComponent ({
         <div class="hero__contents">
             <h2 v-if="localeData.heading" class="hero__copy">{{localeData.heading}}</h2>
             <p v-if="localeData.subheading" class="hero__description">{{localeData.subheading}}</p>
-            <AtomsButton v-if="localeData.link" :link="`${localeData.link}`" />
+            <AtomsButton v-if="localeData" :link="`${localeData.link}`" :to="`${localeData.to}`" />
         </div>
     </section>
 </template>
@@ -74,6 +74,7 @@ export default defineComponent ({
     &__description {
         color: #fff;
         text-shadow: 0 0 15px #666;
+        margin-bottom: 16px;
     }
     &__contents {
         display: flex;

@@ -1,11 +1,58 @@
 <template>
-
+<section class="news">
+    <h2 class="news__heading">{{localeData.heading}}</h2>
+    <div class="news__body">
+        <div v-for="info in localeData.body" class="news__item">
+            <span class="news__itemDate">{{info.date}}</span>
+            <span class="news__itemTitle">{{info.title}}</span>
+        </div>
+    </div>
+</section>
 </template>
 
 <script>
+export default defineComponent ({
+    props: {
+        localeData: {
+            type: Object,
+        }
+    },
 
+    setup({localeData}) {
+        return {
+            localeData
+        }
+    }    
+})
 </script>
 
-<style>
+<style lang="scss">
+.news {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
 
+    &__body {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    &__heading {
+        color: #fff;
+    }
+    &__item {
+        display:flex;
+        flex-direction:row;
+
+        &Date {
+            color: #fff;
+            font-weight: 700;
+            margin-right: 16px;
+        }
+        &Title {
+            color: #fff;
+        }
+    }
+}
 </style>

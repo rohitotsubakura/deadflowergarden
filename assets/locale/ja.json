@@ -69,12 +69,23 @@
             "hero": {
                 "heading": "Have a Happy Virtual Creative Nightlife!",
                 "subheading": "素敵なバーチャルの夜を応援するクリエイターユニット",
-                "link": "早速作品を見る"
+                "link": "早速作品を見る",
+                "to": "/#works"
             },
             "news": {
                 "heading": "NEWS",
                 "subheading": "お知らせ",
-                "link": "もっと見る"
+                "link": "もっと見る",
+                "body": [
+                    {
+                        "date": "2022/03/01",
+                        "title": "公式サイト公開しました！"
+                    },
+                    {
+                        "date": "2022/03/02",
+                        "title": "ジュリ扇をBOOTHにて頒布します！"
+                    }
+                ]
             },
             "about": {
                 "heading": "ABOUT US",
