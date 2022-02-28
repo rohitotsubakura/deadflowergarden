@@ -1,1 +1,156 @@
-{}
+[
+    {
+        "ja" : {
+            "common" : {
+                "ogp": {
+                    "title": {
+                        "top": "TOP",
+                        "newsList": "お知らせ一覧",
+                        "newsDetail": "",
+                        "404": "404"
+                    },
+                    "url": {
+                        "top": "http://rohitotsubakura.netlify.app/",
+                        "newsList": "http://rohitotsubakura.netlify.app/news/",
+                        "newsDetail": "http://rohitotsubakura.netlify.app/news/",
+                        "404": "http://rohitotsubakura.netlify.app/404/"
+                    },
+                    "ogpthumb": {
+                        "top": "https://rohitotsubakura.netlify.app/static/images/imagekeyvisual.png",
+                        "newsList": "https://rohitotsubakura.netlify.app/static/images/image_crop.png",
+                        "newsDetail": "",
+                        "404": "https://rohitotsubakura.netlify.app/static/images/image404.png"
+                    },
+                    "description": {
+                        "top": "クリエイターユニットDead Flower Gardenのサイトです。",
+                        "newsList": "クリエイターユニット「Dead Flower Garden」に関わるニュースの一覧です。",
+                        "newsDetail": "クリエイターユニット「Dead Flower Garden」よりお知らせです。",
+                        "404": "ここにはなにもないんだ。ごめんね。"
+                    }
+                },
+                "header": {
+                    "list" : [
+                        {
+                            "name": "NEWS",
+                            "to": "/#news"
+                        },
+                        {
+                            "name": "ABOUT US",
+                            "to": "/#about"
+                        },
+                        {
+                            "name": "MEMBERS",
+                            "to": "/#members"
+                        },
+                        {
+                            "name": "WORKS",
+                            "to": "/#works"
+                        },
+                        {
+                            "name": "CONTACT",
+                            "to": "/#contact"
+                        }
+                    ]
+                },
+                "breadcrumb" : {
+                    "separator": ">",
+                    "links" : [
+                        {
+                            "name": "TOP",
+                            "to": "/"
+                        },
+                        {
+                            "name": "NEWS",
+                            "to": "/news"
+                        }
+                    ]
+                }
+            },
+            "top" : {
+                "hero": {
+                    "heading": "Have a Happy Virtual Creative Nightlife!",
+                    "subheading": "素敵なバーチャルの夜を応援するクリエイターユニット",
+                    "link": "早速作品を見る"
+                },
+                "news": {
+                    "heading": "NEWS",
+                    "subheading": "お知らせ",
+                    "link": "もっと見る"
+                },
+                "about": {
+                    "heading": "ABOUT US",
+                    "subheading": "Have a Happy Virtual Creative Nightlife!",
+                    "body": [
+                        "✟枯れた創作者の花園へようこそ！✟",
+                        "僕達は仮想世界を軸に、ダークな創作活動を行うクリエイターユニットです！",
+                        "3DCGを作ったり、同人誌を作ったり、VRCイベントへ出没したりすることで、皆んなのバーチャルの夜を楽しくしたい！という想いのもと活動しています。"
+                    ]
+                },
+                "members": {
+                    "heading": "MEMBERS",
+                    "subheading": "メンバー紹介",
+                    "rohito": {
+                        "name": "ツバクラロヒト",
+                        "body": [
+                            "白塗り人造美男子。デフラガの広報係をしています。",
+                            "TwitterやYouTubeではメンバーが作ったもの紹介の他、VR配信で秘密基地の中を楽しく遊び回っています。"
+                        ],
+                        "skills": ["イラスト", "作曲", "プログラミング"],
+                        "link": [
+                            {
+                                "twitter": "https://twitter.com/RhtTbkr",
+                                "youtube": "https://www.youtube.com/channel/UCpctdX7YT14M9jza4ExLUJw"
+                            }
+                        ]
+                    },
+                    "kimoto": {
+                        "name": "キノモト(ヒトガタ)",
+                        "body": [
+                            "デフラガの裏方担当として3Dやイラストを頑張っています。",
+                            "VR空間では人形のヒトガタくんの姿で秘密基地に住み込んでいるという噂！"
+                        ],
+                        "skills": ["3DCG","イラスト", "動画"],
+                        "link": [
+                            {
+                                "artstation": "https://www.artstation.com/kimotojm"
+                            }
+                        ]
+                    }
+                },
+                "works": {
+                    "heading": "WORKS",
+                    "subheading": "作品紹介",
+                    "body": [
+                        {
+                            "name": "ジュリ扇",
+                            "image": "https://placehold.jp/300x300.png",
+                            "description": "VRC想定。これを持てば今夜はバブリー！"
+                        }
+                    ],
+                    "link": "お店を覗く(BOOTH)",
+                    "to": "https://deadflowergarden.booth.pm/"
+                },
+                "contact": {
+                    "heading": "CONTACT",
+                    "subheading": "連絡先",
+                    "body": ["ユニットへのお問い合わせ、お仕事のご依頼はrohitotsubakura★gmail.comまで。","(★を半角＠に置き換えてください)"]
+                }
+            },
+            "404" : {
+                "heading": "404",
+                "subheading": "Not Found.",
+                "body": "お探しのページは見つかりませんでした。",
+                "links" : [
+                    {
+                        "name": "BACK",
+                        "to": ""
+                    },
+                    {
+                        "name": "TOPへ戻る",
+                        "to": "/"
+                    }
+                ]
+            }
+        }
+    }
+]
