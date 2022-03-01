@@ -1,5 +1,5 @@
 <template>
-    <NuxtLink :to="`${to}`">
+    <NuxtLink to="#" :class="'button__link'">
         <div class="button">
             <span>{{link}}</span>
         </div>
@@ -17,7 +17,7 @@ export default defineComponent ({
             link,
             to
         }
-    }    
+    }
 })
 </script>
 
@@ -39,8 +39,7 @@ export default defineComponent ({
         background-color: rgba(255, 255,255,0.4);
     }
 }
-.router-link-active,
-.router-link-exact-active {
+.button__link {
     display: inline-block;
     text-decoration: none;
     color: #fff;

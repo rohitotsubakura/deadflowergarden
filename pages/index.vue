@@ -8,6 +8,7 @@ export default {
 
 <script setup lang="ts">
 import News from "~~/components/molecules/News.vue";
+import Works from "~~/components/molecules/Works.vue";
 const localeData = await $fetch('/api/data').then(
     (response)=> {
         return {
@@ -25,4 +26,5 @@ const localeData = await $fetch('/api/data').then(
     <MainHeader v-if="localeData" :localeData="localeData.localeData.common.header.list" />
     <Hero v-if="localeData" :localeData="localeData.localeData.top.hero" />
     <News v-if="localeData" :localeData="localeData.localeData.top.news" />
+    <Works v-if="localeData" :localeData="localeData.localeData.top.works"/>
 </template>
