@@ -1,5 +1,5 @@
 <template>
-    <NuxtLink to="#" :class="'button__link'">
+    <NuxtLink :to="to" :href="to" :class="'button__link'" v-smooth-scroll>
         <div class="button">
             <span>{{link}}</span>
         </div>

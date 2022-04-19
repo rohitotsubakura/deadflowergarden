@@ -1,14 +1,15 @@
 <script lang="ts">
 import MainHeader from "../components/molecules/MainHeader.vue";
 import Hero from "../components/molecules/Hero.vue";
+import News from "../components/molecules/News.vue";
+import Works from "../components/molecules/Works.vue";
+
 export default {
     components: { MainHeader, Hero }
 }
 </script>
 
 <script setup lang="ts">
-import News from "~~/components/molecules/News.vue";
-import Works from "~~/components/molecules/Works.vue";
 const localeData = await $fetch('/api/data').then(
     (response)=> {
         return {

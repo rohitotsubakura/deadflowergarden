@@ -7,8 +7,14 @@ export default defineComponent ({
         }
     },
     setup({ localeData }) {
+        const getItemImagePath = (body) => {
+            return {
+                itemImagePath: `../assets/images/${body.image}.png`
+            }
+        };
         return {
-            localeData
+            localeData,
+            getItemImagePath
         };
     },
     components: { Button }
@@ -20,15 +26,22 @@ export default defineComponent ({
     <h2 class="works__heading">{{localeData.heading}}</h2>
     <p class="works__subheading">{{ localeData.subheading }}</p>
     <div class="works__body">
-        <div v-for="info in localeData.body" class="works__item">
-            <img :src="info.image" class="works__itemImage">
+        <div v-for="(info, index) in localeData.body" :key="index" class="works__item">
+            <div class="works__itemImage"
+                 :style="[
+                    {
+                      'background-image':
+                        'url(' + getItemImagePath(info).itemImagePath + ')',
+                    },
+                ]"
+            ></div>
             <div class="works__itemText">
                 <span class="works__itemTitle">{{info.name}}</span>
                 <span class="works__itemDescription">{{info.description}}</span>
             </div>
         </div>
     </div>
-    <a :href="localeData.to" class="works__link"><span>{{localeData.link}}</span></a>
+    <a :href="localeData.to" class="works__link" target="_blank" rel="noopener noreferrer"><span>{{localeData.link}}</span></a>
 </section>
 </template>
 
@@ -61,6 +74,8 @@ export default defineComponent ({
             width: 300px;
             height: 300px;
             margin-bottom: 24px;
+            background-size: cover;
+            background-position: center;
         }
         &Text {
             display: flex;

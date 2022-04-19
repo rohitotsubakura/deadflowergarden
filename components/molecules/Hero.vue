@@ -18,31 +18,15 @@ export default defineComponent ({
 
 <template>
     <section class="hero">
-        <video id="video" poster="../../assets/images/hero.png" webkit-playsinline playsinline muted autoplay loop>
-            <source src="../../assets/videos/bg-rohito.mp4" type="video/mp4">
-        </video>
         <div class="hero__contents">
             <h2 v-if="localeData.heading" class="hero__copy">{{localeData.heading}}</h2>
             <p v-if="localeData.subheading" class="hero__description">{{localeData.subheading}}</p>
-            <AtomsButton v-if="localeData" :link="`${localeData.link}`" :to="`${localeData.to}`" />
+            <AtomsButton v-if="localeData" :link="localeData.link" :to="localeData.to" />
         </div>
     </section>
 </template>
 
 <style lang="scss">
-#video {
-    /*天地中央配置*/
-    position: absolute;
-    z-index: -1;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    /*縦横幅指定*/
-    width: 177.77777778vh; /* 16:9 の幅→16 ÷ 9＝ 177.77% */
-    height: 56.25vw; /* 16:9の幅 → 9 ÷ 16 = 56.25% */
-    min-height: 100%;
-    min-width: 100%;
-}
 .hero {
     display: flex;
     align-items: center;
@@ -52,6 +36,8 @@ export default defineComponent ({
     position:relative;
     z-index: 0;
     overflow: hidden;
+    background-image: url('../../assets/images/hero.png');
+    background-size: cover;
 
     &::after {
 	background-image: linear-gradient(45deg, #666 25%, transparent 25%), 

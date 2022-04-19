@@ -9,3 +9,6 @@ body {
   background-color: rgb(24, 24, 24);
 }
 </style>
+
+<script lang="ts">
+</script>

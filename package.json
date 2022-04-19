@@ -8,7 +8,8 @@
   "devDependencies": {
     "nuxt3": "latest",
     "sass": "^1.49.9",
-    "sass-loader": "10"
+    "sass-loader": "10",
+    "vue3-smooth-scroll": "^0.8.1"
   },
   "dependencies": {}
 }
