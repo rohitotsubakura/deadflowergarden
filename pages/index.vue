@@ -2,6 +2,7 @@
 import MainHeader from "../components/molecules/MainHeader.vue";
 import Hero from "../components/molecules/Hero.vue";
 import News from "../components/molecules/News.vue";
+import About from "../components/molecules/About.vue";
 import Works from "../components/molecules/Works.vue";
 
 export default {
@@ -27,5 +28,6 @@ const localeData = await $fetch('/api/data').then(
     <MainHeader v-if="localeData" :localeData="localeData.localeData.common.header.list" />
     <Hero v-if="localeData" :localeData="localeData.localeData.top.hero" />
     <News v-if="localeData" :localeData="localeData.localeData.top.news" />
+    <About v-if="localeData" :localeData="localeData.localeData.top.about"/>
     <Works v-if="localeData" :localeData="localeData.localeData.top.works"/>
 </template>
