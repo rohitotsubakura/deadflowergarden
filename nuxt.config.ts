@@ -5,6 +5,7 @@ export default defineNuxtConfig({
     typescript: {
         shim: false
     },
+    css: ['modern-css-reset'],
     target: 'static',
     components: {
       dirs: [

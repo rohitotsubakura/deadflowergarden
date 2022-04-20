@@ -96,9 +96,8 @@ export default defineComponent ({
     &__link {
         border: 4px solid #fff;
         border-radius: 50px;
-        width: 200px;
         height: 40px;
-        padding: 16px;
+        padding: 32px;
         display: flex;
         align-items: center;
         justify-content: center;

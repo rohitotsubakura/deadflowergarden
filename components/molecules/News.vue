@@ -40,6 +40,7 @@ export default defineComponent ({
     }
     &__heading {
         color: #fff;
+        margin-bottom: 16px;
     }
     &__item {
         display:flex;

@@ -40,10 +40,12 @@
 
     &__heading {
         font-size: 24px;
+        margin-bottom: 16px;
     }
 
     &__subheading {
         font-size: 20px;
+        margin-bottom: 16px;
     }
 
     &__description {

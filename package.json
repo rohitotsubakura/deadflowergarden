@@ -11,5 +11,7 @@
     "sass-loader": "10",
     "vue3-smooth-scroll": "^0.8.1"
   },
-  "dependencies": {}
+  "dependencies": {
+    "modern-css-reset": "^1.4.0"
+  }
 }
