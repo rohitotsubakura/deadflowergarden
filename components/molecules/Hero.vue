@@ -56,11 +56,12 @@ export default defineComponent ({
         color: #fff;
         font-size: 32px;
         text-shadow: 0 0 15px #666;
+        margin-bottom: 4px;
     }
     &__description {
         color: #fff;
         text-shadow: 0 0 15px #666;
-        margin-bottom: 16px;
+        margin-bottom: 20px;
     }
     &__contents {
         display: flex;

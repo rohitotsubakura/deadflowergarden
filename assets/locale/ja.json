@@ -67,8 +67,8 @@
         },
         "top" : {
             "hero": {
-                "heading": "Have a Happy Virtual Creative Nightlife!",
-                "subheading": "素敵なバーチャルの夜を応援するクリエイターユニット",
+                "heading": "Welcome to the metaverse covered with the darkness!",
+                "subheading": "バーチャルでアンダーグラウンドなクリエイターユニット",
                 "link": "早速作品を見る",
                 "to": "#works"
             },
@@ -97,7 +97,7 @@
                 "body": [
                     "✟枯れた創作者の花園へようこそ！✟",
                     "僕達は仮想世界を軸に、ダークな創作活動を行うクリエイターユニットです！",
-                    "3DCGを作ったり、同人誌を作ったり、VRCイベントへ出没したりすることで、皆んなのバーチャルの夜を楽しくしたい！という想いのもと活動しています。"
+                    "3DCGを作ったり、同人誌を作ったり、VRCイベントへ出没したりして活動しています。"
                 ]
             },
             "members": {
