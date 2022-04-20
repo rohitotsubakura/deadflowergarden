@@ -1,7 +1,7 @@
 # What's this?
 This repository is a website of the virtual creator group "Dead Flower Garden".
  
-![image](https://user-images.githubusercontent.com/7070710/156086619-e7ecdb06-d494-4980-9ccc-5673f0668fd4.png)
+![Screenshot](https://user-images.githubusercontent.com/7070710/163944975-21c63df2-9342-47cc-bc90-a8bc9fb3aded.png)
 
 
 # Nuxt 3 Minimal Starter
