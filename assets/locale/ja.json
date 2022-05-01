@@ -31,23 +31,23 @@
                 "list" : [
                     {
                         "name": "NEWS",
-                        "to": "/#news"
+                        "to": "#news"
                     },
                     {
                         "name": "ABOUT US",
-                        "to": "/#about"
+                        "to": "#about"
                     },
                     {
                         "name": "MEMBERS",
-                        "to": "/#members"
+                        "to": "#members"
                     },
                     {
                         "name": "WORKS",
-                        "to": "/#works"
+                        "to": "#works"
                     },
                     {
                         "name": "CONTACT",
-                        "to": "/#contact"
+                        "to": "#contact"
                     }
                 ]
             },
@@ -86,7 +86,7 @@
                         "title": "メンバーのツバクラロヒトが80sVRファッションショー出演！"
                     },
                     {
-                        "date": "2022/04/20",
+                        "date": "2022/05/08",
                         "title": "公式サイト公開しました！"
                     }
                 ]

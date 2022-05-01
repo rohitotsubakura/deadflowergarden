@@ -1,5 +1,5 @@
 <template>
-<section class="news">
+<section class="news" id="news">
     <h2 class="news__heading">{{localeData.heading}}</h2>
     <div class="news__body">
         <div v-for="info in localeData.body" class="news__item">
@@ -32,9 +32,9 @@ export default defineComponent ({
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 40px;
+    padding: 60px 40px;
     @media screen and (max-width: 810px) {
-        padding-top: 80px;
+        padding-top: 100px;
     }
 
     &__body {

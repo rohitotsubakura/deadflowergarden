@@ -14,7 +14,7 @@
 </script>
 
 <template>
-    <div class="about">
+    <div class="about" id="about">
         <h2 class="about__heading">{{localeData.heading}}</h2>
         <h3 class="about__subheading">{{localeData.subheading}}</h3>
         <p v-for="(body, index) in localeData.body" :key="index" class="about__description">
@@ -29,7 +29,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 100px;
+    padding: 100px 40px;
     background: linear-gradient(-225deg, #231557 0%, #44107A 29%, #FF1361 67%, #FFF800 100%);
 
     &__heading,

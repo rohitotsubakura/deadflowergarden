@@ -69,6 +69,7 @@ export default defineComponent ({
         text-shadow: 0 0 15px #666;
         margin-bottom: 4px;
         margin-top: 16px;
+        text-align: center;
         @media screen and (max-width:810px) {
             font-size: 20px;
         }
@@ -77,8 +78,12 @@ export default defineComponent ({
         color: #fff;
         text-shadow: 0 0 15px #666;
         margin-bottom: 16px;
+        text-align: center;
         @media screen and (max-width:810px) {
             font-size: 16px;
+        }
+        @media screen and (max-width:480px) {
+            font-size: 12px;
         }
     }
     &__contents {
@@ -89,7 +94,7 @@ export default defineComponent ({
     }
     &__logo {
         position: absolute;
-        top: 50vh;
+        top: 55vh;
         max-width: 50rem;
         z-index: 2;
     }
