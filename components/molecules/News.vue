@@ -33,6 +33,9 @@ export default defineComponent ({
     justify-content: center;
     align-items: center;
     padding: 40px;
+    @media screen and (max-width: 810px) {
+        padding-top: 80px;
+    }
 
     &__body {
         display: flex;
@@ -43,8 +46,12 @@ export default defineComponent ({
         margin-bottom: 16px;
     }
     &__item {
-        display:flex;
-        flex-direction:row;
+        display: flex;
+        flex-direction: row;
+        @media screen and (max-width:480px) {
+            flex-direction:column;
+            margin-bottom: 16px;
+        }
 
         &Date {
             color: #fff;

@@ -76,6 +76,7 @@ export default defineComponent ({
             margin-bottom: 24px;
             background-size: cover;
             background-position: center;
+            border-radius: 40px;
         }
         &Text {
             display: flex;
